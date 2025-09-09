@@ -1,0 +1,1658 @@
+[2025-09-05 10:24:40 -0300] [1] [INFO] Starting gunicorn 23.0.0
+[2025-09-05 10:24:40 -0300] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2025-09-05 10:24:40 -0300] [1] [INFO] Using worker: sync
+[2025-09-05 10:24:40 -0300] [6] [INFO] Booting worker with pid: 6
+[2025-09-05 10:24:40 -0300] [6] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'views'
+[2025-09-05 10:24:40 -0300] [6] [INFO] Worker exiting (pid: 6)
+[2025-09-05 10:24:40 -0300] [7] [INFO] Booting worker with pid: 7
+[2025-09-05 10:24:40 -0300] [7] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'views'
+[2025-09-05 10:24:40 -0300] [7] [INFO] Worker exiting (pid: 7)
+[2025-09-05 10:24:40 -0300] [1] [ERROR] Worker (pid:6) exited with code 3
+[2025-09-05 10:24:40 -0300] [1] [ERROR] Worker (pid:7) was sent SIGTERM!
+[2025-09-05 10:24:41 -0300] [1] [ERROR] Shutting down: Master
+[2025-09-05 10:24:41 -0300] [1] [ERROR] Reason: Worker failed to boot.
+[2025-09-05 10:24:42 -0300] [1] [INFO] Starting gunicorn 23.0.0
+[2025-09-05 10:24:42 -0300] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2025-09-05 10:24:42 -0300] [1] [INFO] Using worker: sync
+[2025-09-05 10:24:42 -0300] [7] [INFO] Booting worker with pid: 7
+[2025-09-05 10:24:42 -0300] [7] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'views'
+[2025-09-05 10:24:42 -0300] [7] [INFO] Worker exiting (pid: 7)
+[2025-09-05 10:24:42 -0300] [1] [ERROR] Worker (pid:7) exited with code 3
+[2025-09-05 10:24:42 -0300] [1] [ERROR] Shutting down: Master
+[2025-09-05 10:24:42 -0300] [1] [ERROR] Reason: Worker failed to boot.
+[2025-09-05 10:24:42 -0300] [1] [INFO] Starting gunicorn 23.0.0
+[2025-09-05 10:24:42 -0300] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2025-09-05 10:24:42 -0300] [1] [INFO] Using worker: sync
+[2025-09-05 10:24:42 -0300] [7] [INFO] Booting worker with pid: 7
+[2025-09-05 10:24:42 -0300] [7] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'views'
+[2025-09-05 10:24:42 -0300] [7] [INFO] Worker exiting (pid: 7)
+[2025-09-05 10:24:42 -0300] [1] [ERROR] Worker (pid:7) exited with code 3
+[2025-09-05 10:24:42 -0300] [1] [ERROR] Shutting down: Master
+[2025-09-05 10:24:42 -0300] [1] [ERROR] Reason: Worker failed to boot.
+[2025-09-05 10:24:44 -0300] [1] [INFO] Starting gunicorn 23.0.0
+[2025-09-05 10:24:44 -0300] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2025-09-05 10:24:44 -0300] [1] [INFO] Using worker: sync
+[2025-09-05 10:24:44 -0300] [8] [INFO] Booting worker with pid: 8
+[2025-09-05 10:24:44 -0300] [8] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'views'
+[2025-09-05 10:24:44 -0300] [8] [INFO] Worker exiting (pid: 8)
+[2025-09-05 10:24:44 -0300] [9] [INFO] Booting worker with pid: 9
+[2025-09-05 10:24:44 -0300] [9] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'views'
+[2025-09-05 10:24:44 -0300] [9] [INFO] Worker exiting (pid: 9)
+[2025-09-05 10:24:44 -0300] [10] [INFO] Booting worker with pid: 10
+[2025-09-05 10:24:44 -0300] [10] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'views'
+[2025-09-05 10:24:44 -0300] [10] [INFO] Worker exiting (pid: 10)
+[2025-09-05 10:24:44 -0300] [1] [ERROR] Worker (pid:8) exited with code 3
+[2025-09-05 10:24:44 -0300] [1] [ERROR] Worker (pid:10) was sent SIGTERM!
+[2025-09-05 10:24:44 -0300] [1] [ERROR] Worker (pid:9) was sent SIGTERM!
+[2025-09-05 10:24:44 -0300] [1] [ERROR] Shutting down: Master
+[2025-09-05 10:24:44 -0300] [1] [ERROR] Reason: Worker failed to boot.
+[2025-09-05 10:24:45 -0300] [1] [INFO] Starting gunicorn 23.0.0
+[2025-09-05 10:24:45 -0300] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2025-09-05 10:24:45 -0300] [1] [INFO] Using worker: sync
+[2025-09-05 10:24:45 -0300] [8] [INFO] Booting worker with pid: 8
+[2025-09-05 10:24:45 -0300] [8] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'views'
+[2025-09-05 10:24:45 -0300] [8] [INFO] Worker exiting (pid: 8)
+[2025-09-05 10:24:45 -0300] [1] [ERROR] Worker (pid:8) exited with code 3
+[2025-09-05 10:24:45 -0300] [1] [ERROR] Shutting down: Master
+[2025-09-05 10:24:45 -0300] [1] [ERROR] Reason: Worker failed to boot.
+[2025-09-05 10:24:47 -0300] [1] [INFO] Starting gunicorn 23.0.0
+[2025-09-05 10:24:47 -0300] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2025-09-05 10:24:47 -0300] [1] [INFO] Using worker: sync
+[2025-09-05 10:24:47 -0300] [7] [INFO] Booting worker with pid: 7
+[2025-09-05 10:24:47 -0300] [8] [INFO] Booting worker with pid: 8
+[2025-09-05 10:24:47 -0300] [7] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'views'
+[2025-09-05 10:24:47 -0300] [7] [INFO] Worker exiting (pid: 7)
+[2025-09-05 10:24:47 -0300] [8] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'views'
+[2025-09-05 10:24:47 -0300] [8] [INFO] Worker exiting (pid: 8)
+[2025-09-05 10:24:48 -0300] [9] [INFO] Booting worker with pid: 9
+[2025-09-05 10:24:48 -0300] [1] [ERROR] Worker (pid:8) exited with code 3
+[2025-09-05 10:24:48 -0300] [9] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'views'
+[2025-09-05 10:24:48 -0300] [9] [INFO] Worker exiting (pid: 9)
+[2025-09-05 10:24:48 -0300] [1] [ERROR] Worker (pid:7) was sent SIGTERM!
+[2025-09-05 10:24:48 -0300] [1] [ERROR] Worker (pid:9) exited with code 3
+[2025-09-05 10:24:51 -0300] [1] [INFO] Starting gunicorn 23.0.0
+[2025-09-05 10:24:51 -0300] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2025-09-05 10:24:51 -0300] [1] [INFO] Using worker: sync
+[2025-09-05 10:24:51 -0300] [7] [INFO] Booting worker with pid: 7
+[2025-09-05 10:24:51 -0300] [7] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'views'
+[2025-09-05 10:24:51 -0300] [7] [INFO] Worker exiting (pid: 7)
+[2025-09-05 10:24:51 -0300] [1] [ERROR] Worker (pid:7) exited with code 3
+[2025-09-05 10:24:51 -0300] [1] [ERROR] Shutting down: Master
+[2025-09-05 10:24:51 -0300] [1] [ERROR] Reason: Worker failed to boot.
+[2025-09-05 10:24:58 -0300] [1] [INFO] Starting gunicorn 23.0.0
+[2025-09-05 10:24:58 -0300] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2025-09-05 10:24:58 -0300] [1] [INFO] Using worker: sync
+[2025-09-05 10:24:58 -0300] [7] [INFO] Booting worker with pid: 7
+[2025-09-05 10:24:58 -0300] [7] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'views'
+[2025-09-05 10:24:58 -0300] [7] [INFO] Worker exiting (pid: 7)
+[2025-09-05 10:24:58 -0300] [1] [ERROR] Worker (pid:7) exited with code 3
+[2025-09-05 10:24:58 -0300] [1] [ERROR] Shutting down: Master
+[2025-09-05 10:24:58 -0300] [1] [ERROR] Reason: Worker failed to boot.
+[2025-09-05 10:25:12 -0300] [1] [INFO] Starting gunicorn 23.0.0
+[2025-09-05 10:25:12 -0300] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2025-09-05 10:25:12 -0300] [1] [INFO] Using worker: sync
+[2025-09-05 10:25:12 -0300] [7] [INFO] Booting worker with pid: 7
+[2025-09-05 10:25:12 -0300] [7] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'views'
+[2025-09-05 10:25:12 -0300] [7] [INFO] Worker exiting (pid: 7)
+[2025-09-05 10:25:12 -0300] [8] [INFO] Booting worker with pid: 8
+[2025-09-05 10:25:12 -0300] [8] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'views'
+[2025-09-05 10:25:12 -0300] [8] [INFO] Worker exiting (pid: 8)
+[2025-09-05 10:25:12 -0300] [1] [ERROR] Worker (pid:7) exited with code 3
+[2025-09-05 10:25:12 -0300] [1] [ERROR] Worker (pid:8) was sent SIGTERM!
+[2025-09-05 10:25:12 -0300] [1] [ERROR] Shutting down: Master
+[2025-09-05 10:25:12 -0300] [1] [ERROR] Reason: Worker failed to boot.
+[2025-09-05 10:29:16 -0300] [1] [INFO] Starting gunicorn 23.0.0
+[2025-09-05 10:29:16 -0300] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2025-09-05 10:29:16 -0300] [1] [INFO] Using worker: sync
+[2025-09-05 10:29:16 -0300] [7] [INFO] Booting worker with pid: 7
+[2025-09-05 10:29:16 -0300] [8] [INFO] Booting worker with pid: 8
+[2025-09-05 10:29:16 -0300] [9] [INFO] Booting worker with pid: 9
+[2025-09-05 10:29:16 -0300] [10] [INFO] Booting worker with pid: 10
+[2025-09-05 10:29:17 -0300] [9] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/code/views.py", line 4, in <module>
+    from helpers import *
+ModuleNotFoundError: No module named 'helpers'
+[2025-09-05 10:29:17 -0300] [9] [INFO] Worker exiting (pid: 9)
+[2025-09-05 10:29:17 -0300] [7] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/code/views.py", line 4, in <module>
+    from helpers import *
+ModuleNotFoundError: No module named 'helpers'
+[2025-09-05 10:29:17 -0300] [7] [INFO] Worker exiting (pid: 7)
+[2025-09-05 10:29:17 -0300] [8] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/code/views.py", line 4, in <module>
+    from helpers import *
+ModuleNotFoundError: No module named 'helpers'
+[2025-09-05 10:29:17 -0300] [8] [INFO] Worker exiting (pid: 8)
+[2025-09-05 10:29:17 -0300] [1] [ERROR] Worker (pid:9) exited with code 3
+[2025-09-05 10:29:17 -0300] [1] [ERROR] Worker (pid:7) was sent SIGTERM!
+[2025-09-05 10:29:17 -0300] [1] [ERROR] Worker (pid:8) was sent SIGTERM!
+[2025-09-05 10:29:17 -0300] [10] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/code/views.py", line 4, in <module>
+    from helpers import *
+ModuleNotFoundError: No module named 'helpers'
+[2025-09-05 10:29:17 -0300] [10] [INFO] Worker exiting (pid: 10)
+[2025-09-05 10:29:17 -0300] [1] [ERROR] Worker (pid:10) exited with code 3
+[2025-09-05 10:29:18 -0300] [1] [INFO] Starting gunicorn 23.0.0
+[2025-09-05 10:29:18 -0300] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2025-09-05 10:29:18 -0300] [1] [INFO] Using worker: sync
+[2025-09-05 10:29:18 -0300] [8] [INFO] Booting worker with pid: 8
+[2025-09-05 10:29:18 -0300] [9] [INFO] Booting worker with pid: 9
+[2025-09-05 10:29:18 -0300] [10] [INFO] Booting worker with pid: 10
+[2025-09-05 10:29:18 -0300] [11] [INFO] Booting worker with pid: 11
+[2025-09-05 10:29:18 -0300] [8] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/code/views.py", line 4, in <module>
+    from helpers import *
+ModuleNotFoundError: No module named 'helpers'
+[2025-09-05 10:29:18 -0300] [8] [INFO] Worker exiting (pid: 8)
+[2025-09-05 10:29:18 -0300] [1] [ERROR] Worker (pid:8) exited with code 3
+[2025-09-05 10:29:18 -0300] [9] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/code/views.py", line 4, in <module>
+    from helpers import *
+ModuleNotFoundError: No module named 'helpers'
+[2025-09-05 10:29:18 -0300] [9] [INFO] Worker exiting (pid: 9)
+[2025-09-05 10:29:18 -0300] [11] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/code/views.py", line 4, in <module>
+    from helpers import *
+ModuleNotFoundError: No module named 'helpers'
+[2025-09-05 10:29:18 -0300] [11] [INFO] Worker exiting (pid: 11)
+[2025-09-05 10:29:18 -0300] [10] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/code/views.py", line 4, in <module>
+    from helpers import *
+ModuleNotFoundError: No module named 'helpers'
+[2025-09-05 10:29:18 -0300] [10] [INFO] Worker exiting (pid: 10)
+[2025-09-05 10:29:19 -0300] [1] [ERROR] Worker (pid:9) exited with code 3
+[2025-09-05 10:29:19 -0300] [1] [INFO] Starting gunicorn 23.0.0
+[2025-09-05 10:29:19 -0300] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2025-09-05 10:29:19 -0300] [1] [INFO] Using worker: sync
+[2025-09-05 10:29:19 -0300] [7] [INFO] Booting worker with pid: 7
+[2025-09-05 10:29:19 -0300] [8] [INFO] Booting worker with pid: 8
+[2025-09-05 10:29:19 -0300] [9] [INFO] Booting worker with pid: 9
+[2025-09-05 10:29:19 -0300] [10] [INFO] Booting worker with pid: 10
+[2025-09-05 10:29:20 -0300] [9] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/code/views.py", line 4, in <module>
+    from helpers import *
+ModuleNotFoundError: No module named 'helpers'
+[2025-09-05 10:29:20 -0300] [9] [INFO] Worker exiting (pid: 9)
+[2025-09-05 10:29:20 -0300] [7] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/code/views.py", line 4, in <module>
+    from helpers import *
+ModuleNotFoundError: No module named 'helpers'
+[2025-09-05 10:29:20 -0300] [7] [INFO] Worker exiting (pid: 7)
+[2025-09-05 10:29:20 -0300] [8] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/code/views.py", line 4, in <module>
+    from helpers import *
+ModuleNotFoundError: No module named 'helpers'
+[2025-09-05 10:29:20 -0300] [8] [INFO] Worker exiting (pid: 8)
+[2025-09-05 10:29:20 -0300] [1] [ERROR] Worker (pid:9) exited with code 3
+[2025-09-05 10:29:20 -0300] [1] [ERROR] Worker (pid:7) was sent SIGTERM!
+[2025-09-05 10:29:20 -0300] [1] [ERROR] Worker (pid:8) was sent SIGTERM!
+[2025-09-05 10:29:20 -0300] [10] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/code/views.py", line 4, in <module>
+    from helpers import *
+ModuleNotFoundError: No module named 'helpers'
+[2025-09-05 10:29:20 -0300] [10] [INFO] Worker exiting (pid: 10)
+[2025-09-05 10:29:20 -0300] [1] [ERROR] Worker (pid:10) exited with code 3
+[2025-09-05 10:29:21 -0300] [1] [INFO] Starting gunicorn 23.0.0
+[2025-09-05 10:29:21 -0300] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2025-09-05 10:29:21 -0300] [1] [INFO] Using worker: sync
+[2025-09-05 10:29:21 -0300] [7] [INFO] Booting worker with pid: 7
+[2025-09-05 10:29:21 -0300] [8] [INFO] Booting worker with pid: 8
+[2025-09-05 10:29:21 -0300] [9] [INFO] Booting worker with pid: 9
+[2025-09-05 10:29:21 -0300] [10] [INFO] Booting worker with pid: 10
+[2025-09-05 10:29:21 -0300] [7] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/code/views.py", line 4, in <module>
+    from helpers import *
+ModuleNotFoundError: No module named 'helpers'
+[2025-09-05 10:29:21 -0300] [7] [INFO] Worker exiting (pid: 7)
+[2025-09-05 10:29:21 -0300] [1] [ERROR] Worker (pid:7) exited with code 3
+[2025-09-05 10:29:21 -0300] [9] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/code/views.py", line 4, in <module>
+    from helpers import *
+ModuleNotFoundError: No module named 'helpers'
+[2025-09-05 10:29:21 -0300] [9] [INFO] Worker exiting (pid: 9)
+[2025-09-05 10:29:21 -0300] [8] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/code/views.py", line 4, in <module>
+    from helpers import *
+ModuleNotFoundError: No module named 'helpers'
+[2025-09-05 10:29:21 -0300] [8] [INFO] Worker exiting (pid: 8)
+[2025-09-05 10:29:21 -0300] [10] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/code/views.py", line 4, in <module>
+    from helpers import *
+ModuleNotFoundError: No module named 'helpers'
+[2025-09-05 10:29:21 -0300] [10] [INFO] Worker exiting (pid: 10)
+[2025-09-05 10:29:21 -0300] [1] [ERROR] Worker (pid:8) exited with code 3
+[2025-09-05 10:31:11 -0300] [1] [INFO] Starting gunicorn 23.0.0
+[2025-09-05 10:31:11 -0300] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2025-09-05 10:31:11 -0300] [1] [INFO] Using worker: sync
+[2025-09-05 10:31:11 -0300] [7] [INFO] Booting worker with pid: 7
+[2025-09-05 10:31:11 -0300] [8] [INFO] Booting worker with pid: 8
+[2025-09-05 10:31:11 -0300] [9] [INFO] Booting worker with pid: 9
+[2025-09-05 10:31:11 -0300] [10] [INFO] Booting worker with pid: 10
+[2025-09-05 10:31:11 -0300] [7] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/code/views.py", line 4, in <module>
+    from helpers import *
+ModuleNotFoundError: No module named 'helpers'
+[2025-09-05 10:31:11 -0300] [7] [INFO] Worker exiting (pid: 7)
+[2025-09-05 10:31:11 -0300] [1] [ERROR] Worker (pid:7) exited with code 3
+[2025-09-05 10:31:11 -0300] [8] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/code/views.py", line 4, in <module>
+    from helpers import *
+ModuleNotFoundError: No module named 'helpers'
+[2025-09-05 10:31:11 -0300] [8] [INFO] Worker exiting (pid: 8)
+[2025-09-05 10:31:11 -0300] [9] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/code/views.py", line 4, in <module>
+    from helpers import *
+ModuleNotFoundError: No module named 'helpers'
+[2025-09-05 10:31:11 -0300] [9] [INFO] Worker exiting (pid: 9)
+[2025-09-05 10:31:11 -0300] [1] [ERROR] Worker (pid:8) exited with code 3
+[2025-09-05 10:31:12 -0300] [1] [INFO] Starting gunicorn 23.0.0
+[2025-09-05 10:31:12 -0300] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2025-09-05 10:31:12 -0300] [1] [INFO] Using worker: sync
+[2025-09-05 10:31:12 -0300] [7] [INFO] Booting worker with pid: 7
+[2025-09-05 10:31:12 -0300] [8] [INFO] Booting worker with pid: 8
+[2025-09-05 10:31:12 -0300] [9] [INFO] Booting worker with pid: 9
+[2025-09-05 10:31:12 -0300] [10] [INFO] Booting worker with pid: 10
+[2025-09-05 10:31:12 -0300] [7] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/code/views.py", line 4, in <module>
+    from helpers import *
+ModuleNotFoundError: No module named 'helpers'
+[2025-09-05 10:31:12 -0300] [7] [INFO] Worker exiting (pid: 7)
+[2025-09-05 10:31:12 -0300] [8] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/code/views.py", line 4, in <module>
+    from helpers import *
+ModuleNotFoundError: No module named 'helpers'
+[2025-09-05 10:31:12 -0300] [8] [INFO] Worker exiting (pid: 8)
+[2025-09-05 10:31:12 -0300] [1] [ERROR] Worker (pid:7) exited with code 3
+[2025-09-05 10:31:12 -0300] [1] [ERROR] Worker (pid:8) was sent SIGTERM!
+[2025-09-05 10:31:12 -0300] [9] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/code/views.py", line 4, in <module>
+    from helpers import *
+ModuleNotFoundError: No module named 'helpers'
+[2025-09-05 10:31:13 -0300] [9] [INFO] Worker exiting (pid: 9)
+[2025-09-05 10:31:13 -0300] [10] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/code/views.py", line 4, in <module>
+    from helpers import *
+ModuleNotFoundError: No module named 'helpers'
+[2025-09-05 10:31:13 -0300] [10] [INFO] Worker exiting (pid: 10)
+[2025-09-05 10:31:13 -0300] [1] [ERROR] Worker (pid:9) exited with code 3
+[2025-09-05 10:31:13 -0300] [1] [ERROR] Worker (pid:10) exited with code 3
+[2025-09-05 10:31:13 -0300] [1] [INFO] Starting gunicorn 23.0.0
+[2025-09-05 10:31:13 -0300] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2025-09-05 10:31:13 -0300] [1] [INFO] Using worker: sync
+[2025-09-05 10:31:13 -0300] [7] [INFO] Booting worker with pid: 7
+[2025-09-05 10:31:14 -0300] [8] [INFO] Booting worker with pid: 8
+[2025-09-05 10:31:14 -0300] [9] [INFO] Booting worker with pid: 9
+[2025-09-05 10:31:14 -0300] [10] [INFO] Booting worker with pid: 10
+[2025-09-05 10:31:14 -0300] [7] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/code/views.py", line 4, in <module>
+    from helpers import *
+ModuleNotFoundError: No module named 'helpers'
+[2025-09-05 10:31:14 -0300] [7] [INFO] Worker exiting (pid: 7)
+[2025-09-05 10:31:14 -0300] [8] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/code/views.py", line 4, in <module>
+    from helpers import *
+ModuleNotFoundError: No module named 'helpers'
+[2025-09-05 10:31:14 -0300] [8] [INFO] Worker exiting (pid: 8)
+[2025-09-05 10:31:14 -0300] [1] [ERROR] Worker (pid:7) exited with code 3
+[2025-09-05 10:31:14 -0300] [1] [ERROR] Worker (pid:8) was sent SIGTERM!
+[2025-09-05 10:31:14 -0300] [9] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/code/views.py", line 4, in <module>
+    from helpers import *
+ModuleNotFoundError: No module named 'helpers'
+[2025-09-05 10:31:14 -0300] [9] [INFO] Worker exiting (pid: 9)
+[2025-09-05 10:31:14 -0300] [10] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/code/views.py", line 4, in <module>
+    from helpers import *
+ModuleNotFoundError: No module named 'helpers'
+[2025-09-05 10:31:14 -0300] [10] [INFO] Worker exiting (pid: 10)
+[2025-09-05 10:31:14 -0300] [1] [ERROR] Worker (pid:9) exited with code 3
+[2025-09-05 10:33:23 -0300] [1] [INFO] Starting gunicorn 23.0.0
+[2025-09-05 10:33:23 -0300] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2025-09-05 10:33:23 -0300] [1] [INFO] Using worker: sync
+[2025-09-05 10:33:23 -0300] [8] [INFO] Booting worker with pid: 8
+[2025-09-05 10:33:23 -0300] [9] [INFO] Booting worker with pid: 9
+[2025-09-05 10:33:23 -0300] [10] [INFO] Booting worker with pid: 10
+[2025-09-05 10:33:24 -0300] [11] [INFO] Booting worker with pid: 11
+[2025-09-05 10:33:24 -0300] [8] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/code/views.py", line 4, in <module>
+    from helpers import *
+ModuleNotFoundError: No module named 'helpers'
+[2025-09-05 10:33:24 -0300] [8] [INFO] Worker exiting (pid: 8)
+[2025-09-05 10:33:24 -0300] [1] [ERROR] Worker (pid:8) exited with code 3
+[2025-09-05 10:33:24 -0300] [9] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/code/views.py", line 4, in <module>
+    from helpers import *
+ModuleNotFoundError: No module named 'helpers'
+[2025-09-05 10:33:24 -0300] [9] [INFO] Worker exiting (pid: 9)
+[2025-09-05 10:33:24 -0300] [1] [ERROR] Worker (pid:9) exited with code 3
+[2025-09-05 10:33:24 -0300] [11] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/code/views.py", line 4, in <module>
+    from helpers import *
+ModuleNotFoundError: No module named 'helpers'
+[2025-09-05 10:33:24 -0300] [11] [INFO] Worker exiting (pid: 11)
+[2025-09-05 10:33:25 -0300] [1] [INFO] Starting gunicorn 23.0.0
+[2025-09-05 10:33:25 -0300] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2025-09-05 10:33:25 -0300] [1] [INFO] Using worker: sync
+[2025-09-05 10:33:25 -0300] [7] [INFO] Booting worker with pid: 7
+[2025-09-05 10:33:25 -0300] [8] [INFO] Booting worker with pid: 8
+[2025-09-05 10:33:25 -0300] [9] [INFO] Booting worker with pid: 9
+[2025-09-05 10:33:25 -0300] [10] [INFO] Booting worker with pid: 10
+[2025-09-05 10:33:25 -0300] [7] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/code/views.py", line 4, in <module>
+    from helpers import *
+ModuleNotFoundError: No module named 'helpers'
+[2025-09-05 10:33:25 -0300] [7] [INFO] Worker exiting (pid: 7)
+[2025-09-05 10:33:25 -0300] [1] [ERROR] Worker (pid:7) exited with code 3
+[2025-09-05 10:33:26 -0300] [8] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/code/views.py", line 4, in <module>
+    from helpers import *
+ModuleNotFoundError: No module named 'helpers'
+[2025-09-05 10:33:26 -0300] [8] [INFO] Worker exiting (pid: 8)
+[2025-09-05 10:33:26 -0300] [9] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/code/views.py", line 4, in <module>
+    from helpers import *
+ModuleNotFoundError: No module named 'helpers'
+[2025-09-05 10:33:26 -0300] [9] [INFO] Worker exiting (pid: 9)
+[2025-09-05 10:33:26 -0300] [10] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/code/views.py", line 4, in <module>
+    from helpers import *
+ModuleNotFoundError: No module named 'helpers'
+[2025-09-05 10:33:26 -0300] [10] [INFO] Worker exiting (pid: 10)
+[2025-09-05 10:33:26 -0300] [1] [ERROR] Worker (pid:9) exited with code 3
+[2025-09-05 10:33:26 -0300] [1] [ERROR] Worker (pid:8) exited with code 3
+[2025-09-05 10:33:26 -0300] [1] [INFO] Starting gunicorn 23.0.0
+[2025-09-05 10:33:26 -0300] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2025-09-05 10:33:26 -0300] [1] [INFO] Using worker: sync
+[2025-09-05 10:33:26 -0300] [7] [INFO] Booting worker with pid: 7
+[2025-09-05 10:33:27 -0300] [8] [INFO] Booting worker with pid: 8
+[2025-09-05 10:33:27 -0300] [9] [INFO] Booting worker with pid: 9
+[2025-09-05 10:33:27 -0300] [10] [INFO] Booting worker with pid: 10
+[2025-09-05 10:33:27 -0300] [7] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/code/views.py", line 4, in <module>
+    from helpers import *
+ModuleNotFoundError: No module named 'helpers'
+[2025-09-05 10:33:27 -0300] [7] [INFO] Worker exiting (pid: 7)
+[2025-09-05 10:33:27 -0300] [1] [ERROR] Worker (pid:7) exited with code 3
+[2025-09-05 10:33:27 -0300] [8] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/code/views.py", line 4, in <module>
+    from helpers import *
+ModuleNotFoundError: No module named 'helpers'
+[2025-09-05 10:33:27 -0300] [8] [INFO] Worker exiting (pid: 8)
+[2025-09-05 10:33:27 -0300] [1] [ERROR] Worker (pid:8) exited with code 3
+[2025-09-05 10:33:27 -0300] [10] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/code/views.py", line 4, in <module>
+    from helpers import *
+ModuleNotFoundError: No module named 'helpers'
+[2025-09-05 10:33:27 -0300] [10] [INFO] Worker exiting (pid: 10)
+[2025-09-05 10:33:27 -0300] [9] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.9/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/code/views.py", line 4, in <module>
+    from helpers import *
+ModuleNotFoundError: No module named 'helpers'
+[2025-09-05 10:33:27 -0300] [9] [INFO] Worker exiting (pid: 9)
+[2025-09-05 10:53:49 -0300] [1] [INFO] Starting gunicorn 23.0.0
+[2025-09-05 10:53:49 -0300] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2025-09-05 10:53:49 -0300] [1] [INFO] Using worker: sync
+[2025-09-05 10:53:49 -0300] [8] [INFO] Booting worker with pid: 8
+[2025-09-05 10:53:49 -0300] [9] [INFO] Booting worker with pid: 9
+[2025-09-05 10:53:49 -0300] [10] [INFO] Booting worker with pid: 10
+[2025-09-05 10:53:49 -0300] [11] [INFO] Booting worker with pid: 11
+[2025-09-05 11:24:20 -0300] [1] [INFO] Handling signal: term
+[2025-09-05 11:24:20 -0300] [10] [INFO] Worker exiting (pid: 10)
+[2025-09-05 11:24:20 -0300] [8] [INFO] Worker exiting (pid: 8)
+[2025-09-05 11:24:20 -0300] [9] [INFO] Worker exiting (pid: 9)
+[2025-09-05 11:24:20 -0300] [11] [INFO] Worker exiting (pid: 11)
+[2025-09-05 11:24:20 -0300] [1] [INFO] Shutting down: Master
+[2025-09-05 11:24:41 -0300] [1] [INFO] Starting gunicorn 23.0.0
+[2025-09-05 11:24:41 -0300] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2025-09-05 11:24:41 -0300] [1] [INFO] Using worker: sync
+[2025-09-05 11:24:41 -0300] [7] [INFO] Booting worker with pid: 7
+[2025-09-05 11:24:41 -0300] [8] [INFO] Booting worker with pid: 8
+[2025-09-05 11:24:41 -0300] [9] [INFO] Booting worker with pid: 9
+[2025-09-05 11:24:41 -0300] [10] [INFO] Booting worker with pid: 10
+[2025-09-05 13:47:18 -0300] [1] [INFO] Handling signal: term
+[2025-09-05 13:47:18 -0300] [10] [INFO] Worker exiting (pid: 10)
+[2025-09-05 13:47:18 -0300] [9] [INFO] Worker exiting (pid: 9)
+[2025-09-05 13:47:18 -0300] [8] [INFO] Worker exiting (pid: 8)
+[2025-09-05 13:47:18 -0300] [7] [INFO] Worker exiting (pid: 7)
+[2025-09-05 13:47:21 -0300] [1] [INFO] Shutting down: Master
+[2025-09-06 14:36:30 -0300] [1] [INFO] Starting gunicorn 23.0.0
+[2025-09-06 14:36:30 -0300] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2025-09-06 14:36:30 -0300] [1] [INFO] Using worker: sync
+[2025-09-06 14:36:30 -0300] [8] [INFO] Booting worker with pid: 8
+[2025-09-06 14:36:30 -0300] [9] [INFO] Booting worker with pid: 9
+[2025-09-06 14:36:30 -0300] [10] [INFO] Booting worker with pid: 10
+[2025-09-06 14:36:30 -0300] [11] [INFO] Booting worker with pid: 11
+[2025-09-06 14:48:42 -0300] [1] [INFO] Handling signal: term
+[2025-09-06 14:48:42 -0300] [8] [INFO] Worker exiting (pid: 8)
+[2025-09-06 14:48:42 -0300] [9] [INFO] Worker exiting (pid: 9)
+[2025-09-06 14:48:42 -0300] [10] [INFO] Worker exiting (pid: 10)
+[2025-09-06 14:48:42 -0300] [11] [INFO] Worker exiting (pid: 11)
+[2025-09-06 14:48:42 -0300] [1] [INFO] Shutting down: Master
+[2025-09-06 14:48:52 -0300] [1] [INFO] Starting gunicorn 23.0.0
+[2025-09-06 14:48:52 -0300] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2025-09-06 14:48:52 -0300] [1] [INFO] Using worker: sync
+[2025-09-06 14:48:52 -0300] [7] [INFO] Booting worker with pid: 7
+[2025-09-06 14:48:52 -0300] [8] [INFO] Booting worker with pid: 8
+[2025-09-06 14:48:52 -0300] [9] [INFO] Booting worker with pid: 9
+[2025-09-06 14:48:52 -0300] [10] [INFO] Booting worker with pid: 10
+[2025-09-06 14:49:37 -0300] [1] [INFO] Handling signal: term
+[2025-09-06 14:49:37 -0300] [10] [INFO] Worker exiting (pid: 10)
+[2025-09-06 14:49:37 -0300] [7] [INFO] Worker exiting (pid: 7)
+[2025-09-06 14:49:37 -0300] [9] [INFO] Worker exiting (pid: 9)
+[2025-09-06 14:49:37 -0300] [8] [INFO] Worker exiting (pid: 8)
+[2025-09-06 14:49:37 -0300] [1] [INFO] Shutting down: Master
+[2025-09-06 14:49:45 -0300] [1] [INFO] Starting gunicorn 23.0.0
+[2025-09-06 14:49:45 -0300] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2025-09-06 14:49:45 -0300] [1] [INFO] Using worker: sync
+[2025-09-06 14:49:45 -0300] [7] [INFO] Booting worker with pid: 7
+[2025-09-06 14:49:45 -0300] [8] [INFO] Booting worker with pid: 8
+[2025-09-06 14:49:45 -0300] [9] [INFO] Booting worker with pid: 9
+[2025-09-06 14:49:45 -0300] [10] [INFO] Booting worker with pid: 10
+[2025-09-08 13:29:56 -0300] [1] [INFO] Handling signal: term
+[2025-09-08 13:29:57 -0300] [8] [INFO] Worker exiting (pid: 8)
+[2025-09-08 13:29:57 -0300] [10] [INFO] Worker exiting (pid: 10)
+[2025-09-08 13:29:57 -0300] [9] [INFO] Worker exiting (pid: 9)
+[2025-09-08 13:29:57 -0300] [7] [INFO] Worker exiting (pid: 7)
+[2025-09-08 13:30:00 -0300] [1] [INFO] Shutting down: Master
+[2025-09-08 13:30:53 -0300] [1] [INFO] Starting gunicorn 23.0.0
+[2025-09-08 13:30:53 -0300] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2025-09-08 13:30:53 -0300] [1] [INFO] Using worker: sync
+[2025-09-08 13:30:53 -0300] [7] [INFO] Booting worker with pid: 7
+[2025-09-08 13:30:53 -0300] [8] [INFO] Booting worker with pid: 8
+[2025-09-08 13:30:54 -0300] [9] [INFO] Booting worker with pid: 9
+[2025-09-08 13:30:54 -0300] [10] [INFO] Booting worker with pid: 10
+[2025-09-09 11:30:33 -0300] [1] [INFO] Handling signal: term
+[2025-09-09 11:30:34 -0300] [10] [INFO] Worker exiting (pid: 10)
+[2025-09-09 11:30:34 -0300] [9] [INFO] Worker exiting (pid: 9)
+[2025-09-09 11:30:34 -0300] [8] [INFO] Worker exiting (pid: 8)
+[2025-09-09 11:30:34 -0300] [7] [INFO] Worker exiting (pid: 7)
+[2025-09-09 11:30:38 -0300] [1] [INFO] Shutting down: Master
