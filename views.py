@@ -3,9 +3,15 @@ from flask_cors import CORS
 import pandas as pd
 import glob
 import re
+import os
 
 app = Flask(__name__)
 CORS(app)
+
+# --- CONFIGURAÇÃO DA AWS S3 ---
+# Certifique-se que estes valores correspondem ao seu bucket e região
+S3_BUCKET_NAME = os.environ.get('S3_BUCKET_NAME', 'curation-images')
+S3_REGION = os.environ.get('AWS_DEFAULT_REGION', 'us-east-1')
 
 def processar_todos_logs():
     """
@@ -26,21 +32,30 @@ def processar_todos_logs():
     
     df_completo = pd.concat(lista_dfs, ignore_index=True)
     
-    # --- MUDANÇA PRINCIPAL AQUI ---
-    # REMOVEMOS O FILTRO para incluir TP, TN, FP, e FN.
-    # A variável foi renomeada de df_erros para df_resultados.
     df_resultados = df_completo.copy()
     
-    # Cria o caminho relativo para a pasta 'public' do Quasar
-    df_resultados['PublicPath'] = df_resultados['ImagePath'].apply(
+    # >>> INÍCIO DA ALTERAÇÃO <<<
+    # Esta seção foi modificada para gerar a URL pública do S3
+
+    # 1. Extrai a chave do objeto (ex: raw-dataset/0_Amiloidose/...) do caminho local
+    df_resultados['S3ObjectKey'] = df_resultados['ImagePath'].apply(
         lambda x: 'raw-dataset' + x.split('raw-dataset', 1)[1] if 'raw-dataset' in x else None
     )
     
-    df_resultados.dropna(subset=['PublicPath'], inplace=True)
+    # 2. Constrói a URL pública completa e a atribui a uma nova coluna 'imageUrl'
+    df_resultados['imageUrl'] = df_resultados['S3ObjectKey'].apply(
+        lambda key: f"https://{S3_BUCKET_NAME}.s3.{S3_REGION}.amazonaws.com/{key}" if key else None
+    )
+    
+    # 3. Remove as colunas intermediárias e desnecessárias do resultado final
+    df_resultados.dropna(subset=['imageUrl'], inplace=True)
+    df_resultados.drop(columns=['ImagePath', 'PublicPath', 'S3ObjectKey'], errors='ignore', inplace=True)
+    
+    # >>> FIM DA ALTERAÇÃO <<<
     
     return df_resultados.to_dict(orient='records')
 
-@app.route('/api/resultados') # Rota renomeada para refletir que retorna todos os resultados
+@app.route('/api/resultados')
 def get_resultados():
     """Endpoint da API que retorna todos os dados de classificação."""
     dados = processar_todos_logs()
