@@ -1682,3 +1682,115 @@ ModuleNotFoundError: No module named 'helpers'
 [2025-09-10 23:33:06 -0300] [6] [INFO] Worker exiting (pid: 6)
 [2025-09-10 23:33:06 -0300] [9] [INFO] Worker exiting (pid: 9)
 [2025-09-10 23:33:07 -0300] [1] [INFO] Shutting down: Master
+[2025-09-11 00:37:01 -0300] [1] [INFO] Starting gunicorn 23.0.0
+[2025-09-11 00:37:01 -0300] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2025-09-11 00:37:01 -0300] [1] [INFO] Using worker: sync
+[2025-09-11 00:37:01 -0300] [7] [INFO] Booting worker with pid: 7
+[2025-09-11 00:37:01 -0300] [8] [INFO] Booting worker with pid: 8
+[2025-09-11 00:37:01 -0300] [9] [INFO] Booting worker with pid: 9
+[2025-09-11 00:37:01 -0300] [10] [INFO] Booting worker with pid: 10
+[2025-09-11 00:38:43 -0300] [1] [INFO] Handling signal: term
+[2025-09-11 00:38:43 -0300] [7] [INFO] Worker exiting (pid: 7)
+[2025-09-11 00:38:43 -0300] [10] [INFO] Worker exiting (pid: 10)
+[2025-09-11 00:38:43 -0300] [8] [INFO] Worker exiting (pid: 8)
+[2025-09-11 00:38:43 -0300] [9] [INFO] Worker exiting (pid: 9)
+[2025-09-11 00:38:44 -0300] [1] [INFO] Shutting down: Master
+[2025-09-11 00:38:50 -0300] [1] [INFO] Starting gunicorn 23.0.0
+[2025-09-11 00:38:50 -0300] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2025-09-11 00:38:50 -0300] [1] [INFO] Using worker: sync
+[2025-09-11 00:38:50 -0300] [7] [INFO] Booting worker with pid: 7
+[2025-09-11 00:38:50 -0300] [8] [INFO] Booting worker with pid: 8
+[2025-09-11 00:38:50 -0300] [9] [INFO] Booting worker with pid: 9
+[2025-09-11 00:38:50 -0300] [10] [INFO] Booting worker with pid: 10
+[2025-09-11 00:44:36 -0300] [1] [INFO] Handling signal: term
+[2025-09-11 00:44:36 -0300] [8] [INFO] Worker exiting (pid: 8)
+[2025-09-11 00:44:36 -0300] [7] [INFO] Worker exiting (pid: 7)
+[2025-09-11 00:44:36 -0300] [9] [INFO] Worker exiting (pid: 9)
+[2025-09-11 00:44:36 -0300] [10] [INFO] Worker exiting (pid: 10)
+[2025-09-11 00:44:37 -0300] [1] [INFO] Shutting down: Master
+[2025-09-11 00:44:45 -0300] [1] [INFO] Starting gunicorn 23.0.0
+[2025-09-11 00:44:45 -0300] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2025-09-11 00:44:45 -0300] [1] [INFO] Using worker: sync
+[2025-09-11 00:44:45 -0300] [6] [INFO] Booting worker with pid: 6
+[2025-09-11 00:44:45 -0300] [7] [INFO] Booting worker with pid: 7
+[2025-09-11 00:44:45 -0300] [8] [INFO] Booting worker with pid: 8
+[2025-09-11 00:44:45 -0300] [9] [INFO] Booting worker with pid: 9
+[2025-09-11 00:44:48,201] ERROR in app: Exception on /api/login [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.9/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/code/views.py", line 48, in login
+    return jsonify(user,access_token=access_token)
+  File "/usr/local/lib/python3.9/site-packages/flask/json/__init__.py", line 170, in jsonify
+    return current_app.json.response(*args, **kwargs)  # type: ignore[return-value]
+  File "/usr/local/lib/python3.9/site-packages/flask/json/provider.py", line 205, in response
+    obj = self._prepare_response_obj(args, kwargs)
+  File "/usr/local/lib/python3.9/site-packages/flask/json/provider.py", line 79, in _prepare_response_obj
+    raise TypeError("app.json.response() takes either args or kwargs, not both")
+TypeError: app.json.response() takes either args or kwargs, not both
+[2025-09-11 00:46:17 -0300] [1] [INFO] Handling signal: term
+[2025-09-11 00:46:17 -0300] [7] [INFO] Worker exiting (pid: 7)
+[2025-09-11 00:46:17 -0300] [6] [INFO] Worker exiting (pid: 6)
+[2025-09-11 00:46:17 -0300] [9] [INFO] Worker exiting (pid: 9)
+[2025-09-11 00:46:17 -0300] [8] [INFO] Worker exiting (pid: 8)
+[2025-09-11 00:46:17 -0300] [1] [INFO] Shutting down: Master
+[2025-09-11 00:46:24 -0300] [1] [INFO] Starting gunicorn 23.0.0
+[2025-09-11 00:46:24 -0300] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2025-09-11 00:46:24 -0300] [1] [INFO] Using worker: sync
+[2025-09-11 00:46:24 -0300] [7] [INFO] Booting worker with pid: 7
+[2025-09-11 00:46:24 -0300] [8] [INFO] Booting worker with pid: 8
+[2025-09-11 00:46:24 -0300] [9] [INFO] Booting worker with pid: 9
+[2025-09-11 00:46:24 -0300] [10] [INFO] Booting worker with pid: 10
+[2025-09-11 00:47:57 -0300] [1] [INFO] Handling signal: term
+[2025-09-11 00:47:57 -0300] [7] [INFO] Worker exiting (pid: 7)
+[2025-09-11 00:47:57 -0300] [8] [INFO] Worker exiting (pid: 8)
+[2025-09-11 00:47:57 -0300] [9] [INFO] Worker exiting (pid: 9)
+[2025-09-11 00:47:57 -0300] [10] [INFO] Worker exiting (pid: 10)
+[2025-09-11 00:47:58 -0300] [1] [INFO] Shutting down: Master
+[2025-09-11 00:48:06 -0300] [1] [INFO] Starting gunicorn 23.0.0
+[2025-09-11 00:48:06 -0300] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2025-09-11 00:48:06 -0300] [1] [INFO] Using worker: sync
+[2025-09-11 00:48:06 -0300] [6] [INFO] Booting worker with pid: 6
+[2025-09-11 00:48:06 -0300] [7] [INFO] Booting worker with pid: 7
+[2025-09-11 00:48:06 -0300] [8] [INFO] Booting worker with pid: 8
+[2025-09-11 00:48:06 -0300] [9] [INFO] Booting worker with pid: 9
+[2025-09-11 01:32:40 -0300] [1] [INFO] Handling signal: term
+[2025-09-11 01:32:40 -0300] [6] [INFO] Worker exiting (pid: 6)
+[2025-09-11 01:32:40 -0300] [7] [INFO] Worker exiting (pid: 7)
+[2025-09-11 01:32:40 -0300] [8] [INFO] Worker exiting (pid: 8)
+[2025-09-11 01:32:40 -0300] [9] [INFO] Worker exiting (pid: 9)
+[2025-09-11 01:32:41 -0300] [1] [INFO] Shutting down: Master
+[2025-09-11 01:32:58 -0300] [1] [INFO] Starting gunicorn 23.0.0
+[2025-09-11 01:32:58 -0300] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2025-09-11 01:32:58 -0300] [1] [INFO] Using worker: sync
+[2025-09-11 01:32:58 -0300] [8] [INFO] Booting worker with pid: 8
+[2025-09-11 01:32:58 -0300] [9] [INFO] Booting worker with pid: 9
+[2025-09-11 01:32:58 -0300] [10] [INFO] Booting worker with pid: 10
+[2025-09-11 01:32:58 -0300] [11] [INFO] Booting worker with pid: 11
+[2025-09-11 01:43:21 -0300] [1] [INFO] Handling signal: term
+[2025-09-11 01:43:21 -0300] [8] [INFO] Worker exiting (pid: 8)
+[2025-09-11 01:43:21 -0300] [9] [INFO] Worker exiting (pid: 9)
+[2025-09-11 01:43:21 -0300] [10] [INFO] Worker exiting (pid: 10)
+[2025-09-11 01:43:21 -0300] [11] [INFO] Worker exiting (pid: 11)
+[2025-09-11 01:43:23 -0300] [1] [INFO] Shutting down: Master
+[2025-09-11 01:43:46 -0300] [1] [INFO] Starting gunicorn 23.0.0
+[2025-09-11 01:43:46 -0300] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2025-09-11 01:43:46 -0300] [1] [INFO] Using worker: sync
+[2025-09-11 01:43:46 -0300] [7] [INFO] Booting worker with pid: 7
+[2025-09-11 01:43:46 -0300] [8] [INFO] Booting worker with pid: 8
+[2025-09-11 01:43:46 -0300] [9] [INFO] Booting worker with pid: 9
+[2025-09-11 01:43:46 -0300] [10] [INFO] Booting worker with pid: 10
+[2025-09-11 01:45:02 -0300] [1] [INFO] Handling signal: term
+[2025-09-11 01:45:02 -0300] [7] [INFO] Worker exiting (pid: 7)
+[2025-09-11 01:45:02 -0300] [9] [INFO] Worker exiting (pid: 9)
+[2025-09-11 01:45:02 -0300] [10] [INFO] Worker exiting (pid: 10)
+[2025-09-11 01:45:02 -0300] [8] [INFO] Worker exiting (pid: 8)
+[2025-09-11 01:45:02 -0300] [1] [INFO] Shutting down: Master
